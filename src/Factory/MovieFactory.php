@@ -52,6 +52,7 @@ final class MovieFactory extends ModelFactory
             'name' => self::faker()->country(),
             'rating' => self::faker()->randomFloat(1,1.0,10.0),
             'year' => self::faker()->numberBetween(1945,2023),
+
         ];
     }
 
