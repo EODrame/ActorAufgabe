@@ -31,8 +31,9 @@
             <th>Actors</th>
             <td>
                 {% for actor in actors %}
-                    {{ actor.lastname }}, {{ actor.firstname }}
+                    {{ actor.lastname }} {{ actor.firstname }}
                     {% if not loop.last %}, {% endif %}
+                    <br>
                 {% endfor %}
             </td>
             </tr>
