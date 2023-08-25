@@ -27,6 +27,15 @@
                 <th>Rating</th>
                 <td>{{ movie.rating }}</td>
             </tr>
+            <tr>
+            <th>Actors</th>
+            <td>
+                {% for actor in actors %}
+                    {{ actor.lastname }}, {{ actor.firstname }}
+                    {% if not loop.last %}, {% endif %}
+                {% endfor %}
+            </td>
+            </tr>
         </tbody>
     </table>
 

@@ -31,10 +31,12 @@ class Movie
     #[ORM\ManyToMany(targetEntity: Actor::class, inversedBy: 'movies')]
     private Collection $actor;
 
+
     public function __construct()
     {
-        $this->actor = new ArrayCollection();
+        $this->actors = new ArrayCollection();
     }
+
 
     public function getId(): ?int
     {
